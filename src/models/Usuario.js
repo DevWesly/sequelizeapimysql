@@ -1,4 +1,7 @@
-const {Model,DataTypes} = require('sequelize');
+const {
+    Model,
+    DataTypes
+} = require('sequelize');
 
 class Usuario extends Model {
     static init(sequelize) {
@@ -8,10 +11,9 @@ class Usuario extends Model {
             idade: DataTypes.INTEGER
         }, {
             sequelize,
-            tableName: "Usuarios"
+            tableName: "usuarios"
         })
     }
-    
-    }
+};
 
 module.exports = Usuario;
