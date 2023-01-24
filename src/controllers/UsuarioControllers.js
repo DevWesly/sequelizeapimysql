@@ -12,6 +12,7 @@ module.exports = {
         let usuarios = await Usuario.findAll();
         return res.json({usuarios });
     },
+    
     async criar(req, res) {
         const {nome,sobrenome,idade} = req.body;
         await Usuario.findOrCreate({
